@@ -1,0 +1,185 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="sq_ObterTransacao" this:sq_ObterTransacao.arg_inIntTransacao="1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="arg_inIntTransacao" Type="InArgument(x:Int32)" />
+    <x:Property Name="arg_outStrPaymentAccount" Type="OutArgument(x:String)" />
+    <x:Property Name="arg_outStrPaymentAmmount" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1108,1505.6</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>sq_ObterTransacao_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="35">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="45">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="sq_ObterTransacao" sap:VirtualizedContainerService.HintSize="1118.4,1440.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1075.2,108.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Iniciou: Obter Transação: &quot;&amp; arg_inIntTransacao]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Automation Anywhere Labs - Quarter Close Challenge" sap:VirtualizedContainerService.HintSize="1075.2,1053.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="149dcc07-5208-4f8b-a471-e7a2e1edd5a7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1041.6,836.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState sap2010:Annotation.AnnotationText="Verifica se a transação existe, caso positivo:&#xD;&#xA;volta os valores presentes.&#xD;&#xA;caso negativo: volta conta zerada para verificação posterior" DisplayName="Check App State - Transacao" sap:VirtualizedContainerService.HintSize="998.4,747.2" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="149dcc07-5208-4f8b-a471-e7a2e1edd5a7" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="449.6,468.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGetText DisplayName="Get Text - 'Payment Account'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="149dcc07-5208-4f8b-a471-e7a2e1edd5a7" TextString="[arg_outStrPaymentAccount]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-quarterclose.html?_ga=2.49218595.460877479.1678191340-510187198.1672842637&amp;_gl=1*ppvlo7*_ga*NTEwMTg3MTk4LjE2NzI4NDI2Mzc.*_ga_DG1BTLENXK*MTY3ODE5OTAwOC4yNC4xLjE2NzgxOTkwMjYuNDIuMC4w&amp;_fsi=KeFJdekT" DesignTimeRectangle="556, 445, 260, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Savings (..3842)'" FullSelectorArgument="&lt;webctrl id='PaymentAccount1' tag='INPUT' /&gt;" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl id='PaymentAccount{0}' tag='INPUT' type='text' class='form-control' aaname='' /&gt;&quot;, arg_inIntTransacao)]" Guid="c228cdc9-7714-423e-bb8d-56a66f4c0203" ImageBase64="" InformativeScreenshot="4fd3773139470da15c1ccc4b9d500ed8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Quarter Close Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="556, 405, 156, 30" ElementType="Text" FriendlyName="'Payment Account'" FullSelectorArgument="&lt;webctrl aaname='Payment Account' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Payment Account' tag='LABEL' type='' class='' check:innerText='Payment Account' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uix:NGetText DisplayName="Get Text - Payment Ammount" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="149dcc07-5208-4f8b-a471-e7a2e1edd5a7" TextString="[arg_outStrPaymentAmmount]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-quarterclose.html?_ga=2.49218595.460877479.1678191340-510187198.1672842637&amp;_gl=1*ppvlo7*_ga*NTEwMTg3MTk4LjE2NzI4NDI2Mzc.*_ga_DG1BTLENXK*MTY3ODE5OTAwOC4yNC4xLjE2NzgxOTkwMjYuNDIuMC4w&amp;_fsi=KeFJdekT" DesignTimeRectangle="1144, 445, 218, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'2340'" FullSelectorArgument="&lt;webctrl id='PaymentAmount1' tag='INPUT' /&gt;" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl id='PaymentAmount{0}' tag='INPUT' type='text' class='form-control' aaname='' /&gt;&quot;, arg_inIntTransacao)]" Guid="c2d8940b-2b7c-45ff-a928-49b81033564b" ImageBase64="" InformativeScreenshot="3280e71535e634129473c31cdec19e4b.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Quarter Close Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="1101, 445, 43, 48" ElementType="Text" FriendlyName="'$'" FullSelectorArgument="&lt;webctrl tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='input-group-text' aaname='$' check:innerText='$' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC8AAAA0CAYAAAAaNmH0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJkSURBVGhD7ZpBSxtBGIb797yEHAIJSAoJTQkUL8GDLSRSC1phBduDJ6X2EEG8rKA95CDBIBQPLUi0NsHGhgQSFFsCOeXwdl6zG3d1oc3qdHZlPngOw87AMzPfzH6w+wQhjsclf/W7h+9nTXw9ruNLtaYcetCHXs4YDAZu+VbnAse1c5y3Ouhc/kI3ANCDPvSiH4PivV7vRp4zY4egSN+GXvSjZ7/fd8tzazhDr4FBgX70pLhLnrkV1FW3oR8978jzcHgNCBr01PIq0PKq0PKq0PKq0PJ/5zOM6ArKns/8I1f+tIKV2Wkk4nFMRAXxDHJLOzhsevT1gTz5ExNTMQpPY2FzFbloAcZaAQlOIiV2oe0xZkwkyV9gd3ESE7GX2Dhh+yZtambhehfSxW+3xoyPJHkhy1XPmajabTvn23t4LdLn6XwJNdeY8ZErn1zFQddqh+fAWmkj0iMxZ+LgRyVkt01TrHZKrD4P6DWTyM5vYOuw7t3fB/LkSbeOctFAOjncBZvIlEinB7gu5cqPYM6/xcdP65h5NpxIZHEPLc++/85/lLdyvlnBQpI7YGD3nne9HPmqidzzDLIf7LvcfduUlykv3gGnjjE+kCPfKGGG+f1qx7rL3fIlg/JvsN1wjPGBHPnLn9jOM7czMPbbou2Qt8qGSD6wLymBXdvEXiBfHNY27zbfI8sibVQ23A958qRxhK0lUYzZVWUshfTsOkp1j74+kCs/wp3zD4WWV4WWV4WWV4WWV4WWV8Xjkw/1p8xQf0QO9ed7Rmh/nLCDM+PWMLd4OFRDD/rQyxl3flkJW4RYHvgDvK6K45XqwC8AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="496,196" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[arg_outStrPaymentAccount]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">XXXX</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-quarterclose.html?_ga=2.49218595.460877479.1678191340-510187198.1672842637&amp;_gl=1*ppvlo7*_ga*NTEwMTg3MTk4LjE2NzI4NDI2Mzc.*_ga_DG1BTLENXK*MTY3ODE5OTAwOC4yNC4xLjE2NzgxOTkwMjYuNDIuMC4w&amp;_fsi=KeFJdekT" DesignTimeRectangle="284, 497, 1350, 36" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Transaction 1'" FullSelectorArgument="&lt;webctrl tag='H4' /&gt;" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl tag='H4' type='' class='' aaname='Transaction 1' check:innerText='Transaction {0}' /&gt;&quot;, arg_inIntTransacao)]" Guid="2e2fae02-a11d-4cd4-a5c1-dbcaec9a9415" ImageBase64="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" InformativeScreenshot="046da732fb795041c72f0ff0a72717cf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Quarter Close Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="a96759cdb70ece28b33a88aface0a365.jpg" Selector="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Quarter Close Challenge' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1075.2,108.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Finalizou: Obter Transação: &quot;&amp; arg_inIntTransacao]" />
+  </Sequence>
+</Activity>

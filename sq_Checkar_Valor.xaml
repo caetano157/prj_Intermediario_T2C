@@ -1,0 +1,156 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="sq_Checkar_Valor" this:sq_Checkar_Valor.arg_inStrPaymentAmmount="2340" this:sq_Checkar_Valor.arg_inStrPaymmentAccount="Savings (..3842)" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="arg_inStrPaymentAmmount" Type="InArgument(x:String)" />
+    <x:Property Name="arg_inStrPaymmentAccount" Type="InArgument(x:String)" />
+    <x:Property Name="arg_outBolCheckExec" Type="OutArgument(x:Boolean)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1029.6,1518.4</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>sq_Checkar_Valor_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="42">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="sq_Checkar_Valor" sap:VirtualizedContainerService.HintSize="1040,1453.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="996.8,108.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Iniciou: Checkar Valor: &quot; &amp; arg_inStrPaymentAmmount &amp; &quot; na conta: &quot; &amp; arg_inStrPaymmentAccount]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Arcadia Financial - Account Overview" sap:VirtualizedContainerService.HintSize="996.8,1066.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2a186550-af67-4c19-96a5-6b37c7e69fb8" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="963.2,849.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click - Conta Correspondente" sap:VirtualizedContainerService.HintSize="920,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2a186550-af67-4c19-96a5-6b37c7e69fb8" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-arcadiabank_acct4513.html" DesignTimeRectangle="9, 360, 281, 60" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Checking (..2839)'" FullSelectorArgument="&lt;webctrl parentid='sidenavAccordion' tag='A' /&gt;" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl parentid='sidenavAccordion' tag='A' type='' class='nav-link' aaname='*' check:innerText='{0}' /&gt;&quot;, arg_inStrPaymmentAccount)]" Guid="42d938af-7ab2-4b32-b13e-ac88d52fa1db" ImageBase64="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" InformativeScreenshot="956dbf18525f1f7b564eacd273f235e2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arcadia Financial - Acct 4513' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - Valor" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="920,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="2a186550-af67-4c19-96a5-6b37c7e69fb8" Text="[arg_inStrPaymentAmmount]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-arcadiabank_acct3842.html" DesignTimeRectangle="1583, 829, 260, 49" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='search' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='datatable-input' aaname='Search within table' /&gt;" Guid="a5103bcb-e735-4213-8fd7-be575fc1554a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQgAAAA1CAYAAAC9ZXU4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASfSURBVHhe7drPSyNnHMfx/tNRBiHIsJjCHHakE6iHOQyCIlm0bMpiMSyNrGWDGA9BAnUPgVpKaC1LDoES5NNnZp5Jk0yeXXuI+OP9gu/BcYx6eN6ZZybf6M8LMQzDLBsCwTCMcwgEwzDOKQVibW2NYZgXPkUP5gKRfQPAi1dEgkAAKCEQAJwIBAAnAgHAiUAAcCIQAJwIBAAnAgHAiUAAcCIQAJwIBAAnAgHAiUAAcCIQAJwIBAAnAgHAiUC49BJVKoFaQ/s18AKtPBCjT23t1QNVvYpZcMV4ij7c2jMeKQIBrDYQw5MwC4L3KlJy2FLnsq3m/p6Sek3R+0e+8ggEsMJAjM4UmThUd3sa20NPCoEAVhiIbIFVlPTs108NgQBWGIjfm6qZQNTeDuyBr7u9PFK05WVhqax7qtWP1P3bfrMwuVX3MFKwOXNe3NJg4TJleBKY7yfqjQdqxb689FxzNTN1N9L1aaLQt69jxtuK1P7Nfn8aiIluLxoKi9+3UVN8MniaV0XA/7S6QJgl1NutZovKT9q6GdnDDsX9ilqS3qvoqvuxqR0/DUCks8/2JKO3a455gZKTjrrmvM6PO6qmC/d1S7Nv9nkgQkXfh2p+Wvjld0O1XqdR8BTs2t932VFrN1Djyp6TBaKmZDeUFzTUzs5pa+/b9Ocqis9JBJ6/FQbCMO/S/cMgf/c27/TBQWd5KIYtBeac4KeF6/lxV0m1ouqba3tA6r9vlq4WBj/42WI+/sMeMPJAVBSeln/h9Zs0XFWz/fnCIrdbpCw8d/ZYatxRvG6O18/0leYBT95qA1EYXatt3p3zUPhKzucfcQ7epgs8Vucfe2BGNzE/E8xfHZQsud+RB2I+Gpm7nhKzwKsHfXvAoXjNS/v11ESd+B5/E/AMPEwgrMnnazW387189OG/999s25DGwzmJpmv/bqLhr/nj0njbl/+qmofHTDkQibqz7/4pe7USn0/sAQe7xSgFxsj/3pm/CXimHjQQGbP/Pw7MAqs2VGwcsgW3GauV7fOXzSC/nB/3tJfdl0hvYCbayz5b0VX/3Y4zEKVFbANRvjJYkAVi+VMMAoGX4uEDYdy8q80tsPyewPItxqx80Qfld/VL1xZjySIuPp8xc19jKQIBrDAQV8dq9EZmx76guILYaurGHlK/kT2JKN2kXNDfzxfm/LZhnN8TuG8givPXQ7WWbB+mCASwwkDYm3zeZqh4v6l2+hjxMFGUbhFKTxBmHol+d2QfKZo5bSqp+yY0+VmTizg7p7pdnNNWI/AU1fNHpPcLhGG2KslmGglf0WHbbmPaasaLjznvF4jJ1Z4JnKfwZ3uy2caE6+Z/OejbQE5M3Mz/54Vqf7mBwKOyukDcjXTzsZndSPTSx4JmAVc2fIVxU92/ltwgLD64VHwgyYznB2YBd3QzbclYg5NYtY3i9QIlv9xoYmN070CksicrofzitbyqgvqResVnLggEsMJAAHjyCAQAJwIBwIlAAHAiEACcCAQAJwIBwIlAAHAiEACcCAQAJwIBwIlAAHAiEACcCAQAJwIBwGlpIIpIMAzzsqfoQSkQDMMw+VzoX5tGNMzp46yhAAAAAElFTkSuQmCC" InformativeScreenshot="89c4487d63cbb4aa664647e352fd1de5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arcadia Financial - Acct 3842' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NCheckState DisplayName="Verifica se encontrou o valor" sap:VirtualizedContainerService.HintSize="920,300.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="2a186550-af67-4c19-96a5-6b37c7e69fb8" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Boolean">[arg_outBolCheckExec]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Boolean">[arg_outBolCheckExec]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-arcadiabank_acct3842.html" DesignTimeRectangle="1718, 782, 138, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'2340'" FullSelectorArgument="&lt;webctrl id='datatablesSimple' tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl id='datatablesSimple' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname='2340' check:innerText='{0}' /&gt;&quot;, arg_inStrPaymentAmmount)]" Guid="13d45dc3-a238-4d50-b90e-4a3714cc79b6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAI4AAAA2CAYAAAARZKEQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARhSURBVHhe7Z37b49XHMf9K36QDB0TQrG1VepecQkxQ0ddWh3VmS5FkGIIHaauS12KNauoVEVjLlXUOlU229C6JEU27CISJJLZZ3uf5XzzfZ7vafft53maLNn7h1faPuc859vkvPL5vM/pD+0kvzQKIe2F4hAVnZqamoSQeImIE20RIfFCcYgKikNUUByiguIQFRSHqKA4RAXFISooDlFBcYgKikNUUByiguIQFRSHqKA4RAXFISooDlFBcYgKikNUBBbnzydX5PLpL2RmxrvyRvce0qVrgkwYP0ZqqvbI68cNnrn3rh6XJR/lSN/EROncpau81buPFCyaJy3fVXvmuWj5tlpSU1MlNydTXj74Omb8x0sVkj07w/wO4OMPs+Xh9ZMx80g4BBan4UyZJPTsZTbqbGWJIW/+LCPQ4X2bjFh27tEDn8mqZXlmzsUT++XQ5xskZVCKEeLOlSrPutH88ahBitYUGNlc4tRVlxoJ8blYu/LQVhk1crhMnjReHt8645lLwiGwOLcbqqT5m0rPs1c/1cvSxTmm8vx2u8Yz5uf7i0cksf8A2bPtE+c4uFrzpSQlJUv/AQNjxHl697xMnzrJVK7o5031lfJ20jtSvHG5R14SDh2Wccr3fmo2DmK5xi2/3zkn48aOlvWF+c5xK0ZJ8RpZkD0zRpz6rw6aatN4tszzHqrUyoJcmfbeRHl274JnjASnQ8VJTkk2ucY1brHZ5UT5jpgxbP6mtUuMML821xhp/OKgUqEt/XzjlOddEK+8pP10iDhoVfl5WZI1e7q8uF/nnAMpEGgRqpGPXPOQXSAFWiFkcYmDSjUnc6o8b4l9H9UIWQs5zD9GghG6OMgTCMV9+vYzG+8fRxVAyAXd3uxpfoZE/nmQZciQwZGA7RKnNZksEAefg6/+MRKMUMVBpSnduc6cso6UbnaG0vvXq82Jqvb4XtletMKcqqZMnmCe2zk4CeFEhDZlpaI4/y1CE+fRzdOSMzdDhg5LM6egeE8yVhK7+WhZixbMMUS3L5ckNgDPz5ohLx5cisy1QBhIfO1cecwYCUYo4tysP2qEWZb/wd+npFrnnLYoK9kYCdK2Svwb9hSG+50x6aNMePavW1G6RdLSBnuqGQmHwOLgVDRi+DDZvWWVM6vEA8SxG4x7H7QyP7jYQ0sD+B73NHgX3yNP/VBX4VnTVqO2AjrRE0gctCNcsGW+P0V9V2JbFU5hyEiuOaC1PIMWiYpTuHShR1x7AXisrDjyjIRHIHGQK5AvcM/iqhLAVgZc9C3OnWvuXexYydbVJhyjzTVfPhazfjStiQMQxHFCw/qoQGhRWNefk0h4BBLH3vq6MojFZhFUE0iDtmbHcPG3a3OhWce/tp+2xEHlwyktPX2kWRd/RN1RtNIZmEk4hBKOyf8PikNUUByiguIQFRSHqKA4RAXFISooDlFBcYgKikNUUByiguIQFRSHqKA4RAXFISooDlFBcYgK/mtF0i7+EadR/gKj857SbdIX0wAAAABJRU5ErkJggg==" InformativeScreenshot="b6e7fdf96fdc2a16308e799760d6c468.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arcadia Financial - Acct 3842' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAESSURBVDhPzdGxSkJxFMfxq6BODkIugYuDi5BLzQ2+QaOP4AP0GLkYTSJRBFFNoQ3lFAb1AC3OQi8QBEH1/V6OBHkDCQL/8IE/5/zO8d5r8i9n4+C4iC3sB+/FaGcfAjlsooMLvOAjeLdmz0wuxtLBEnbRwzPe8fkLe2bMOlNyQQP38JeyhrKYdabhgjxa6OMcVxhiAB9b3q3ZM2PWmXy8SPoqBRziEU1UcB28W7NnphBj34eiX/4Gr9hBFbPg3Zo9M8v/iMVorseCbfxcYC17AYUy2njCG7rYwzx4t2bPjNlyjKcL/MKXuMUEY4xwF7xbs2fGbHMxXMMZHjBdkVlnai6o4winOFmRWWfq6VP8/STJF/fpUrTlJmQmAAAAAElFTkSuQmCC" InformativeScreenshot="2c20fbce56b6110c39e2e57d31c2e6b3.jpg" Selector="&lt;html app='chrome.exe' title='Arcadia Financial*' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="996.8,108.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Finalizou: Checkar Valor: &quot;&amp; arg_inStrPaymentAmmount &amp; &quot; na conta: &quot; &amp; arg_inStrPaymmentAccount]" />
+  </Sequence>
+</Activity>

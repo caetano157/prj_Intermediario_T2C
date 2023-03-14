@@ -1,0 +1,146 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="sq_Login_QuarterClose" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="466.4,1270.4" sap2010:WorkflowViewState.IdRef="sq_Login_QuarterClose_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="39">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="sq_Login_QuarterClose" sap:VirtualizedContainerService.HintSize="476.8,1205.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,108.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Iniciou: Login Arcadian Financial&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Automation Anywhere Labs - Quarter Close Challenge" sap:VirtualizedContainerService.HintSize="433.6,818.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="2687b761-c58b-450b-8638-ffa7c218a7f4" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376.8,601.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - 'Email address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="2687b761-c58b-450b-8638-ffa7c218a7f4" Text="tammy.peters@petersmfg.com" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-arcadiabanklogin.html" DesignTimeRectangle="660, 483, 618, 73" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT inputEmail'" FullSelectorArgument="&lt;webctrl id='inputEmail' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputEmail' tag='INPUT' type='email' class='form-control' aaname='Email address' /&gt;" Guid="22e2d17d-fac9-480f-8342-3d387e62130f" ImageBase64="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" InformativeScreenshot="7675c81ee59b4b704c98f265200c9973.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arcadia Financial - Login' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="660, 483, 153, 73" ElementType="Text" FriendlyName="'Email address'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Email address' check:innerText='Email address' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="2687b761-c58b-450b-8638-ffa7c218a7f4" Text="arcadiabank!" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-arcadiabanklogin.html" DesignTimeRectangle="660, 576, 618, 73" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'INPUT inputPassword'" FullSelectorArgument="&lt;webctrl id='inputPassword' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputPassword' tag='INPUT' type='password' class='form-control' aaname='Password' /&gt;" Guid="2b5be5a0-18ad-4c96-b026-13b72958fdc7" ImageBase64="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" InformativeScreenshot="72da1c7816da8aff443a61d5c2d4f7e1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arcadia Financial - Login' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="660, 576, 115, 73" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='' check:innerText='Password' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click - 'Login'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2687b761-c58b-450b-8638-ffa7c218a7f4" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-arcadiabanklogin.html" DesignTimeRectangle="1197, 733, 81, 47" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl aaname='Login' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Login' tag='A' type='' class='btn btn-dark' check:innerText='Login' /&gt;" Guid="88f2ee57-2531-4d70-b7c6-59a2e7ef513d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFUAAAAzCAYAAADmWEQdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAM7SURBVHhe7ZvPaxpBFMf7rxRaqFAKpfecVkqgf0FO5pRjmkMohdKWBgsJORTagxDYQ8BDQAhLIIRACV7Ug+KhIhRZKCYgKAgrBOYgfDtvf+jqjsFkM1mMb+FzcN+bkfnsc2ZcmCfo1cDcLyxVAxGpVv4nVlff4tmLl3j6PMXMgPyQJ/I17XBC6teP7/Hq9RtlJ4wa8kXewh5HUsk4C70b5C1csSOpVMqqBsx8kL+IVJ5D40H+IlJVicztYKkaYKkaYKkaYKkaYKkaYKkaYKkaYKkaYKkaYKkaYKkaeJxSDRMNAaBbRFYV14weqQVbjghoFRSxhyBTQIulPi5YqgZYqgaSlWps46Bow6H5L7jEAK2iiXVF/sqWiQt7ADH0c697qOW3YblfZ+NolLuHkkO3CqH243vUT+lqQI3cS/SbONxKh3LjkZxUQw6y66bBsSs4Oz6BdVxEo+sZFnLwE2I3/MVnKKWXz2XuCc7K8oEMBYTbZE6pHVv2I9Cu+n1Ue3CbX9exP8qNR2JSs2WqFCFzNqZiaT8GNA6D6sngyO1ygNLuZEWt7FZAruaWGvnONH7VvQfZMIN78UhIag61a5kgtzwfVHFDViV18NeXEnxu5rEynSulWP8oOKdUpxLdZplN6gDt4/uZAhKS6kkS9ZwiRvgC+hV8ps/fvWpsn2YUuSm/iuefU8f3fPz+nfJeNHYHFkvqjEpiqS5z/vybpvf5mzdo9UPI4OyKkpdeagr7VVocblqohFw4gsr84T2E4SWsjXBuCu8Omt7qvSxSu3XaJk2T86qTtlR9N025paIBhhelNfkbdyOih0bR6+vij9wOCblF6lBgSaSqr9DgjR0cVi8nNv+ib6OU31Gs8imsHxTR6o+TnU4T1pf0ksypD4pqS5Usiy/VyKNBf1vlorepiifAgksd//vq/v6kiCfDwkjNFntwrmzU/EXKOq2gFbwn6Jwn8jJ6Fgsjdc2soC0XqdEbKnkJR+4EznPYNNRtkmJhpC4SLFUDLFUDLFUDLFUDEal8OiUeytMpfI4qHspzVHzi7+7MPPFH8NnU20O+Zp5NDSDjVMo8x94M+SFP4QoNiEhl4sNS750a/gOKpmc1I+wqzAAAAABJRU5ErkJggg==" InformativeScreenshot="04856f9bd26e4de42c757b2c9e52400d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arcadia Financial - Login' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="b3589dcdf11f084eb2df8bee1939bd85.jpg" Selector="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Quarter Close Challenge' /&gt;" Url="https://developer.automationanywhere.com/challenges/automationanywherelabs-arcadiabanklogin.html" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,108.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Finalizou: Login Arcadian Financial&quot;]" />
+  </Sequence>
+</Activity>
