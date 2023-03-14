@@ -1,0 +1,118 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="sq_Logout_Acardian" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1019.2,1116.8" sap2010:WorkflowViewState.IdRef="sq_Logout_Acardian_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="39">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="sq_Logout_Acardian" sap:VirtualizedContainerService.HintSize="476.8,1052" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,108.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Iniciou: Logout Acardian&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Arcadia Financial - Acct 2147" sap:VirtualizedContainerService.HintSize="433.6,664.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="becdb17e-e9aa-49ba-96d2-a6bfb2445d7f" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376.8,448" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click - User" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="becdb17e-e9aa-49ba-96d2-a6bfb2445d7f" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-arcadiabank_acct2147.html" DesignTimeRectangle="1816, 107, 62, 50" DesignTimeScaleFactor="1.25" FriendlyName="'A navbarDropdown'" FullSelectorArgument="&lt;webctrl id='navbarDropdown' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='navbarDropdown' tag='A' type='' class='nav-link dropdown-toggle' aaname='' /&gt;" Guid="c3e9b738-a57a-42e1-9e54-2a923f49e189" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEIAAAA2CAYAAABz508/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHUSURBVGhD7dXdKwRRHMZx/4qibJSyxEYpolwQbSgXSl5aNsuNd5IryYXXvCT+1aPf9GwxPdbsnjMz0nPxaduZc37N+bbttLV3FpwUnEKAQoBCgEKAQoBCgEKAQoBCgEKAQoBCgEKAQoBCgEKAQoBCQGohllfW3OHxmXt7/4g+7Ttb91ekEuLm7iEKEGfX2fq/IHiI9coWjVBn99m+vAUNMVAaoYePs3Vsf56ChpgtL9CDx9k6tj9PQUNMz5bpweNsHdufp6AhioPD9OBxto7tb8TeOmwW08obKvif5f7RCX24OrvP9iWRJEarr+ngIczl1TV9SLvO1jejUYxWI5hUQhh7qNPzi+gB7dPnIeNYDN/5qYVI29cYISIHC9HdW3Qzc/OuWtuNfgGrG5tubGIqumef9t2u231bZ+vjM5plAUJEMEFClBeX3OPTy7ef6m9sve1j8/LgHaJ/KNkr8ye2n83NmneIvYNjesCkbD+bmzWvEB1dPe759Y0eMCnbb3PY/Cx5hRgdn6SHa5bNYfOzpBDgFaJvoEQP1iybw+ZnyfvPslKtudv7R3rAJLa2d+jcrHmH+C8UAhQCFAIUAhQCFAIUAhQCFAIUAhQCFAIUAhQiUnCf81hDGbG2A9UAAAAASUVORK5CYII=" InformativeScreenshot="cf7d81f825fe88477270550e886c6e2a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arcadia Financial - Acct 2147' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click - Logout" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="becdb17e-e9aa-49ba-96d2-a6bfb2445d7f" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-arcadiabank_acct2147.html" DesignTimeRectangle="1679, 272, 198, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Logout'" FullSelectorArgument="&lt;webctrl aaname='Logout' class='dropdown-item' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Logout' class='dropdown-item' tag='A' type='' check:innerText='Logout' /&gt;" Guid="f06b64b4-3067-415d-9981-a50c4f690301" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMoAAAAsCAYAAAAkeCc3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASESURBVHhe7dqJbxRlGAZw/xATYwyJGDQ1aZAAcohVSBFpKFYhEE2IimjLVcFSUyCEQIFUPFIKFgtUtIA1FEiMJlzlKMq2mBall6QH0BZawN5N21efd2e2M9u1+SKbze7k+SWT3fnm68ySvM9+x/KY/Ku6uhovRBTEzgaDQjQGBoXIAINCZIBBITLAoBAZYFCIDDAoRAYYFCIDDAqRAQaFyACDQmSAQSEywKAQGWBQiAwwKEQGGBQiAxEJSm1dvUydMUuOHP3BaiGKLQxKGAwMDMiBQ4WSm7fPaiGvYVDCoKenV9JWp8v2HbusFvIaBiUMGBTvi7qgNDQ2SkZmlkyc/KI8OW68vuK8ufmW1WPE0NCQnC+9IIuWvC3jxj8rcfEvyGeffynlFddCPq+/v19KTpyUBW+8pf1x4H3JyVMyODho9fJD0aP4EQKnjo4OSUpOCdwbr/icwUfZlV/1OnlDVAXl4qXLGgwU4vGSE3Lh4iX59rsimfHyq/JSwhypqam1eooMDw/L0WPF8sxzz0v6ugw5feasHniP/hPi4l3P6+7ulnUZmfL0hDjZlr1Tzp0vDfRHYHJ2f+EKi2lQGpua9D4Ia+rKNfqZcbS3t+t18oaoCUpb211JWbRE1qSv16J2am1rkzcXL5WPP9mgowLY9wwucLxHG77Vnc/De4w4CKOTHThc8/nKrVbzoACnXt4XNUHBtzJGAWexOuFvp896Rf66eTNwjlGmoaFRz50w8kyeNjPwvK6uLnl3+QpX0Jzw7Y8p2K6c3VYLg0JuURMUXEuclyR3WlqsFjfM+TFF+u2qT89RlCh+hCBY8PPs4t5fcFDPg9mFjtGsr69P2xgUcorpoHyUtlq6e3r03IlBoXCLmqCYTL0SZifq4hkwTfqvYFVd/0PiJ00JPM906vVVbp7V4g9Kcspiuf/ggdXiF+rfwqB4X9QEpaW1VeYlLRxzMb/h06xAoZ89V6ojTNGRY7ogt+H6xs1bRi3mDxUeHnMxj2BhW9mG0WfSlOlSWXXdavH3LThYOOreoUYk8paIBmXrtuzA9ql9XC67Ip2dndoPRYxixtQmeHsYQUFgbChOe2t3y9btut3708+/yLL3PpDMrE2uxTwgfCjkUNvD2GJGWJyBq6uv180CPLv4x+PaH895f0WqzE583XVv/F32zhz97Ie/L9LfZTCqkXdENCj2j3HOA+24bquprZPUVWu16HAdxZq3L18ePvzb6jGit7dX8r85oH3Q97WkZC3SP2/cCDmCoT8Kec7c+dofoVn+YZpc9flcIbFVVlbJ0neWaRjxeXL37JXbt++MWqPAvXvt+jsK+iKkzpGIYl9EghJp9vYwRgKicPBkUDCqYGOg4trvVgvRo/FcUOyFP6ZMwTtWRP9XzAYFIcD/3dqz92tdaGPhn7+/QBffWJ/4yiusnkSPLmaDgl0vhAQLeCygsTifNjNBd5+amputXkThEbNBIYokBoXIAINCZIBBITIQCAoWw48/8ZSeEJEbg0JkYGTqddcn1WXFekJEbgwKkQF/UET+AdLNIgeItZV8AAAAAElFTkSuQmCC" InformativeScreenshot="6d790cd4207882673ff0e74c0bbfbd6a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arcadia Financial - Acct 2147' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAESSURBVDhPzdGxSkJxFMfxq6BODkIugYuDi5BLzQ2+QaOP4AP0GLkYTSJRBFFNoQ3lFAb1AC3OQi8QBEH1/V6OBHkDCQL/8IE/5/zO8d5r8i9n4+C4iC3sB+/FaGcfAjlsooMLvOAjeLdmz0wuxtLBEnbRwzPe8fkLe2bMOlNyQQP38JeyhrKYdabhgjxa6OMcVxhiAB9b3q3ZM2PWmXy8SPoqBRziEU1UcB28W7NnphBj34eiX/4Gr9hBFbPg3Zo9M8v/iMVorseCbfxcYC17AYUy2njCG7rYwzx4t2bPjNlyjKcL/MKXuMUEY4xwF7xbs2fGbHMxXMMZHjBdkVlnai6o4winOFmRWWfq6VP8/STJF/fpUrTlJmQmAAAAAElFTkSuQmCC" InformativeScreenshot="c47a0b628b5d096d63fd7ea467df0fc5.jpg" Selector="&lt;html app='chrome.exe' title='Arcadia Financial*' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,108.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Finalizou: Logout Acardian&quot;]" />
+  </Sequence>
+</Activity>

@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1410.4,1732</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1019.2,1885.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -82,7 +82,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="608.8,1667.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="608.8,1820.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -93,13 +93,13 @@
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Abrir Transações" sap:VirtualizedContainerService.HintSize="565.6,1424" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="83ba9a7d-3098-45ac-a6fa-769b99787760" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Abrir Transações" sap:VirtualizedContainerService.HintSize="565.6,1577.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="83ba9a7d-3098-45ac-a6fa-769b99787760" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="532,1207.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="532,1360.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="var_intIdx" />
               <Variable x:TypeArguments="x:String" Name="var_strPaymentAccount" />
@@ -197,6 +197,11 @@
                 <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-quarterclose.html?_ga=2.49218595.460877479.1678191340-510187198.1672842637&amp;_gl=1*ppvlo7*_ga*NTEwMTg3MTk4LjE2NzI4NDI2Mzc.*_ga_DG1BTLENXK*MTY3ODE5OTAwOC4yNC4xLjE2NzgxOTkwMjYuNDIuMC4w&amp;_fsi=KeFJdekT" DesignTimeRectangle="246, 869, 175, 45" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl id='submitbutton' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='submitbutton' tag='BUTTON' type='button' class='btn btn-info' aaname='Submit' check:innerText='Submit' /&gt;" Guid="d16368a5-a8ca-4977-be5d-3f746cacc3ac" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALMAAAAxCAYAAACRbJggAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKMSURBVHhe7d1BSsNAFIBhbyQexyspXsEb6BFcKgVB8ABSceXChS6k4GLM1GT63sybUk2LyZt/4N80Y9KSr5PUTY5elg+ByENgJjeBmdykMF/d3ofTy0U4Ob8Lx2dE0yz6jE6jV+k3YY4brD8kmnISdMIcpVuTiaZcdFtg5taC5lh0W2C2JhLNITCTm8BMbgIzuQnM5CYwk5vATG4CM7kJzOQmMJObwExuahDzMixWoRxvr8bcP/T42e8whI/npT3nEN28h4/+uNZnuXj+Ck+P+jVvtYVZnnBzfIZr6+9+0+Qwb768YHZTZUXOx9gV+r8wV4or8jDA7CW1KmcrsNr2FRY3YttvA/O/1SRmC9n1W7+xG/Kkb17Pkb+Gp35LWL2Hi+H1DLPEFEcBKs3/2b98H3Gk+WK/cRSfobjNqF+JvKJuB7PE141dV80xmGtDHXuX+Sv9hRiG2g+YW8KsL7l61H/4jcWc4NRuc9T8zTHy95rgyv3I4xaYy/14RTzUFOZYfhnPR37CR2HOfkyasGrza2jVFUZ8KcDcHubUlsu7POljMBe3Mta22vwKTn37AGZZu5iz1IotMIzBXOAR4MC8/5rBXEc5ZONkZZ5PzWCWJ1Uh6FMrs4k5wyDxVDBrhBVYYN5bzWDWP5y2D4lKfQkSkuzfXjXM3UiAJDaJEMx7qyHMXRk0cyg4XQphZWzBbA2F9sCYrffjFXVbmNdlq2oatXvprhz0Gu9u98z69saAdGjMXfl7UMdxVIOYyWtgJjeBmdwEZnITmMlNYCY3gZncBGZyE5jJTWAmN4GZ3FRg5mlTNMfMp03xHECaY+ZzAHlCK80x8wmtA+gonVsOmnLRZ3QqIccUZqL59hC+AZ67KpAEJmGUAAAAAElFTkSuQmCC" InformativeScreenshot="e96d979acb128449b4c1c8548d599c83.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Quarter Close Challenge' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Logout Arcadian" sap:VirtualizedContainerService.HintSize="488.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="sq_Logout_Acardian.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
